@@ -13,21 +13,16 @@ git commit -m "<COMMENT>"
 git push origin master
 If this process was done correctly, you should see these two files appear in your repository. This will be your initial test to confirm that you're hooked into GitHub.
 
-
 Return to your local copies of index.html and style.css. Using the screenshot at the top of these instructions, recreate the design using HTML/CSS.
 
 All of your HTML should be inside of the index.html file.
 All of your CSS should be inside of the style.css file.
-
 
 When you finish the assignment, commit your changes with Git and push them into your GitHub repo. Remember:
 
 git add .
 git commit -m "<COMMENT>"
 git push origin master
-
-
-
 
 Additional Specifications
 
@@ -40,60 +35,70 @@ Section (With a Heading)
 Article (With a Heading) contained within the Section
 Headers contained within the Article
 Paragraph contained within the Article
-
-
-Your CSS should have styles for each of the following elements:
-
-Body
-
-font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-color: '#777'
-background: '#777'
-width: '960px'
-font-size: '18px'
-
-
-Header, Nav, Section, Aside, and Footer
-
-background: '#ebebeb'
-
-
-Article
-
-color: '#ebebeb',
-background: '#777'
-
-
-h1 and p
-
-color: '#777',
-background: '#ebebeb'
-
-
-
-
-The width of the section should be:
-
-section: 495px 
-
+Foooter
 -->
 
 <!DOCTYPE html>
+<!--Set Default language-->
 <html lang="en-us">
 
 <head>
-
+  <!--Add CSS reset-->
+  
+  <!--Set Charset-->
   <meta charset="UTF-8">
-  <title>Bootstrap DemoButtons</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">;
+  
+  <!--Link CSS and Reset-->
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+  <!--Set title -->
+  <title>HW-Wireframe Exercise</title>
+
 </head>
 
 <body>
 
-  <!-- Regular Buttons -->
-  <h1 class="display-1">Here is a non fancy button</h1>
-  <button class="btn btn-secondary btn-sm">Boring Button</button>
-  <a href="" class = "btn btn-primary btn-lg active" role = "button" aria-pressed="true">Fancy Button</a>
+<!-- Header -->
+<header id="headerTop">
+  <h1>header</h1>
+</header>
+
+<!-- Nav -->
+<nav>
+  <h1>nav</h1>
+</nav>
+
+<!-- Aside (With a Heading)-->
+<aside id="h1aside">
+  <h1>aside</h1>
+</aside>
+
+<!-- Section (With a Heading) -->
+<section>
+<h1 id="sectionheading">section</h1>
+
+  <!-- Article (With a Heading) contained within the Section -->
+    <article>
+    <h1 id="article_h1">article</h1>
+
+    <!-- Headers contained within the Article -->
+      <header id="insideArticle">
+      <h1>h1,h2,h3</h1>
+      </header>
+
+    <!-- Paragraph contained within the Article -->
+      <p>
+      p
+      </p>
+    </article>
+</section>
+
+<!-- Footer -->
+<footer>
+<h1>footer</h1>
+</footer>
+
 </body>
 
 </html>
